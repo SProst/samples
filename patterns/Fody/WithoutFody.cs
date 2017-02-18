@@ -6,7 +6,7 @@ namespace CleanViewModels
 {
     public class WithoutFody : ReactiveObject, IBlogViewModel
     {
-        public ReactiveCommand<Unit> Refresh { get; }
+        public ReactiveCommand<Unit, Unit> Refresh { get; }
 
         public ReactiveList<string> Articles { get; }
 

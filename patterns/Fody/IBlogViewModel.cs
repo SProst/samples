@@ -13,7 +13,7 @@ namespace CleanViewModels
         ReactiveList<string> Articles { get; }
         Uri FeedAddress { get; }
         bool IsLoading { get; }
-        ReactiveCommand<Unit> Refresh { get; }
+        ReactiveCommand<Unit, Unit> Refresh { get; }
         string Title { get; }
     }
 }

@@ -10,12 +10,12 @@ namespace CleanViewModels
         public ReactiveList<string> Articles { get; }
 
         [Reactive]
-        public Uri FeedAddress { get; }
+        public Uri FeedAddress { get; set; }
 
         [ObservableAsProperty]
         public extern bool IsLoading { get; }
 
-        public ReactiveCommand<Unit> Refresh { get; }
+        public ReactiveCommand<Unit, Unit> Refresh { get; }
 
         [ObservableAsProperty]
         public extern string Title { get; }
